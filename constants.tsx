@@ -11,7 +11,7 @@ export const PROJECTS: Project[] = [
     tags: ['Node.js', 'React', 'Prompt Engineering', 'MongoDB'],
     image: 'https://res.cloudinary.com/dwi2j4pju/image/upload/v1771484358/oegzvm1zk24m99ftpgst.png',
     liveUrl: 'https://uzhavanforum.vercel.app/',
-    githubUrl: '#',
+    githubUrl: '',
     category: 'Web'
   },
   {
@@ -21,7 +21,7 @@ export const PROJECTS: Project[] = [
     tags: ['Node.js', 'React', 'MongoDB', 'Express'],
     image: 'https://res.cloudinary.com/dwi2j4pju/image/upload/v1771484518/v5w2q5le81j8embe6er0.png',
     liveUrl: 'https://aic-anti-sleep-website-1-5z35.vercel.app/',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/sachin183291-hub/aic-anti-sleep-website--1-',
     category: 'Web'
   },
   {
