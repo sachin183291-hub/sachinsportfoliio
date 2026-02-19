@@ -52,15 +52,23 @@ export const CERTIFICATES: Certificate[] = [
     title: 'Internship Certificate ',
     issuer: 'MPeoples Business Solutions',
     date: '2025',
-    image: 'https://res.cloudinary.com/dtj7ghsyt/image/upload/v1768228128/f3p5jp1yxoal9yzip4yx.jpg',
+    image: 'https://res.cloudinary.com/dwi2j4pju/image/upload/v1771497742/qpsjfcz2abgmabazlcja.jpg',
     category: 'Internship'
   },
   {
     id: 'c1',
     title: 'External hackthon',
     issuer: 'KPRinstitute of engineering and technology',
-    date: '2024',
-    image: 'https://res.cloudinary.com/dhpfn4umb/image/upload/v1769146718/mgrbetwf3flzpgcmvbmd.jpg',
+    date: '2025',
+    image: 'https://res.cloudinary.com/dwi2j4pju/image/upload/v1771497827/ggospcaanduch7svpu2u.jpg',
+    category: 'Technical',
+  },
+  {
+    id: 'c6',
+    title: 'External 24hrs hackthon',
+    issuer: 'NGP Institute of Technology',
+    date: '2026',
+    image: 'https://res.cloudinary.com/dwi2j4pju/image/upload/v1771524100/bctx4gp9a3z9g6xlikc7.jpg',
     category: 'Technical'
   },
   {
@@ -68,15 +76,23 @@ export const CERTIFICATES: Certificate[] = [
     title: 'Internal hackthon',
     issuer: 'M. Kumarasamy College of Engineering',
     date: '2025',
-    image: 'https://res.cloudinary.com/dwi2j4pju/image/upload/v1771484764/aqn1jjxpyl2zgobpqvkd.jpg',
+    image: 'https://res.cloudinary.com/dwi2j4pju/image/upload/v1771524035/jr9kfykqpmow5rnsfzam.jpg',
     category: 'Technical'
+  },
+  {
+    id: 'c7',
+    title: 'Project Expo',
+    issuer: 'College Event Board',
+    date: '2025',
+    image: 'https://res.cloudinary.com/dwi2j4pju/image/upload/v1771523753/czmvaetll7fzwirsgf3x.jpg',
+    category: 'Soft Skill'
   },
   {
     id: 'c2',
     title: 'Event Management Professional',
     issuer: 'College Event Board',
     date: '2025',
-    image: 'https://res.cloudinary.com/dhpfn4umb/image/upload/v1769146615/hixuxhe3evl7rtsvl6vs.jpg',
+    image: 'https://res.cloudinary.com/dwi2j4pju/image/upload/v1771522989/bvwwnljkzgbxnwpwm7uw.jpg',
     category: 'Soft Skill'
   }, // Fixed syntax error: Added missing comma between array elements
   {
@@ -84,7 +100,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'Google Student',
     issuer: 'College Event',
     date: '2025',
-    image: 'https://res.cloudinary.com/dhpfn4umb/image/upload/v1769146896/xxdw2zkcihivczkcigzq.jpg',
+    image: 'https://res.cloudinary.com/dwi2j4pju/image/upload/v1771497865/femst5qoegkl1ogvxfvm.jpg',
     category: 'Technical'
   }
 ];
