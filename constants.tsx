@@ -1,7 +1,7 @@
 
 import { Project, Experience, Skill, Education, Certificate } from './types';
 
-export const RESUME_URL = 'https://res.cloudinary.com/dhpfn4umb/image/upload/v1769144079/s9nskcv3ke3klvsoa0ud.jpg';
+export const RESUME_URL = 'https://res.cloudinary.com/dwi2j4pju/image/upload/v1771496850/sxpg3xypcvfqqoxiabgq.jpg';
 
 export const PROJECTS: Project[] = [
   {
