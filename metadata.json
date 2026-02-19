@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Astra Portfolio",
+  "description": "A high-performance, recruiter-ready personal portfolio with glassmorphism UI, interactive animations, and an AI-powered portfolio assistant.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
