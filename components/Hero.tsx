@@ -115,7 +115,7 @@ const Hero: React.FC = () => {
               
               <div className="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl bg-slate-100 dark:bg-slate-900">
                 <img 
-                  src="https://img.pixelvault.dev/playground/tmp_irr3xzyuvwkt.jpg"
+                  src="/profile.jpg"
                   className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000 ease-out" 
                   alt="About Me"
                   loading="lazy"
