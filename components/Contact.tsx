@@ -112,8 +112,8 @@ const Contact: React.FC<ContactProps> = ({ onOpenResume }) => {
 
             <div className="space-y-10 mb-16">
               {[
-                { icon: Mail, label: 'Transmission', value: 'sachinsiddhappachetty01@gmail.com', href: 'mailto:sachinsiddhappachetty01@gmail.com' },
-                { icon: MapPin, label: 'Coordinates', value: 'Tamil Nadu, India' }
+                { icon: Mail, label: 'Email', value: 'sachinsiddhappachetty01@gmail.com', href: 'mailto:sachinsiddhappachetty01@gmail.com' },
+                { icon: MapPin, label: 'Location', value: 'Salem, Tamil Nadu, India' }
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-6 group">
                   <div className="w-14 h-14 bg-white dark:bg-slate-900 border border-slate-100 dark:border-white/10 rounded-2xl flex items-center justify-center text-orange-600 group-hover:scale-110 transition-transform duration-500 shadow-lg">

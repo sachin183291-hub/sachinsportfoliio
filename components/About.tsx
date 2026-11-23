@@ -41,10 +41,10 @@ const About: React.FC = () => {
               
               <div className="space-y-6 text-lg md:text-xl text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
                 <p>
-                  I am <span className="text-slate-900 dark:text-white font-black italic">Sachin S</span>, a passionate engineer and developer currently pursuing my <span className="text-orange-600 font-bold">B.E. in Electronics and Communication Engineering</span>.
+                  I am <span className="text-slate-900 dark:text-white font-black italic">Sachin S</span>, a motivated <span className="text-orange-600 font-bold">Electronics and Communication Engineering</span> student specializing in <span className="text-slate-900 dark:text-white font-bold">Artificial Intelligence and Software Development</span>.
                 </p>
                 <p>
-                  My work lives at the intersection of <span className="text-slate-900 dark:text-white font-bold">Elegant Design</span> and <span className="text-slate-900 dark:text-white font-bold">Complex Logic</span>. I don't just build websites; I engineer digital ecosystems that are accessible, performant, and future-proof.
+                  With practical experience in AI Engineering, Prompt Engineering, Machine Learning, Deep Learning, and Full Stack Development, I build intelligent end-to-end applications and robust software solutions.
                 </p>
               </div>
             </m.div>
@@ -54,21 +54,21 @@ const About: React.FC = () => {
             {[
               {
                 num: '01',
-                title: 'Design Philosophy',
-                icon: Heart,
-                desc: 'I believe minimalism is the ultimate sophistication. Every pixel must serve a purpose, and every interaction should feel natural and rewarding for the user.'
+                title: 'AI & Full Stack Fusion',
+                icon: Target,
+                desc: 'Specializing in combining Machine Learning models (TensorFlow, scikit-learn, OpenCV) with robust React and Node.js web architectures to build intelligent software solutions.'
               },
               {
                 num: '02',
-                title: 'Technical Mission',
-                icon: Target,
-                desc: 'Bridging the gap between hardware and software. My background in ECE allows me to think from the transistor up to the cloud, creating truly integrated solutions.'
+                title: 'Hardware & IoT Integration',
+                icon: Zap,
+                desc: 'ECE foundation enables seamlessly bridging physical IoT microcontrollers (Arduino, ESP32) with cloud backends and responsive dashboards.'
               },
               {
                 num: '03',
-                title: 'Continuous Evolution',
-                icon: Zap,
-                desc: 'The tech landscape shifts daily. I maintain a regular learning habit, mastering new paradigms like Generative AI and IoT edge computing before they become mainstream.'
+                title: 'Proven Track Record',
+                icon: Heart,
+                desc: 'Hackathon winner and active innovator with experience in real-world consultancy projects, high-stakes 24-hour hackathons, and corporate internships.'
               }
             ].map((box, i) => (
               <m.div 

@@ -5,9 +5,10 @@ export interface Project {
   description: string;
   tags: string[];
   image: string;
+  images?: string[]; // optional: multiple images for slideshow
   liveUrl: string;
   githubUrl: string;
-  category: 'Web' | 'Mobile' | 'AI' | 'Other';
+  category: 'Web' | 'Mobile' | 'AI' | 'Hardware' | 'Consultancy' | 'Other';
 }
 
 export interface Experience {
@@ -41,6 +42,23 @@ export interface Certificate {
   image: string;
   // Fixed type error: Added 'Internship' to the allowed category values
   category: 'Hackathon' | 'Technical' | 'Soft Skill' | 'Internship';
+}
+
+export interface Achievement {
+  title: string;
+  organization: string;
+  year: string;
+  category: 'Hackathon' | 'Award';
+  image?: string;
+}
+
+export interface ConsultancyProject {
+  id: string;
+  title: string;
+  client: string;
+  description: string;
+  technologies: string[];
+  image: string;
 }
 
 export interface Message {

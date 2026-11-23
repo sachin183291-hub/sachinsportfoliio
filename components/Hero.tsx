@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
 
               <div className="max-w-2xl">
                 <p className="text-lg md:text-xl text-slate-500 dark:text-slate-400 mb-14 leading-relaxed font-medium text-balance">
-                  A multi-disciplinary engineer crafting digital experiences that harmonize <span className="text-slate-900 dark:text-white font-black">Fullstack Architecture</span>, <span className="text-slate-900 dark:text-white font-black">IoT Systems</span>, and <span className="text-slate-900 dark:text-white font-black">Modern Design.</span>
+                  Electronics and Communication Engineering student specializing in <span className="text-slate-900 dark:text-white font-black">Artificial Intelligence</span>, <span className="text-slate-900 dark:text-white font-black">Machine Learning</span>, and <span className="text-slate-900 dark:text-white font-black">Full Stack Development</span>.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8 mb-16">

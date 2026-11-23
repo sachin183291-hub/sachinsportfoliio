@@ -69,13 +69,44 @@
       ::selection { background: #f97316; color: white; }
       
       *, *::before, *::after {
-        transition: background-color 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
-                    border-color 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
-                    color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: background-color, border-color, color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
       }
 
-      #cursor-dot { transition: transform 0.05s linear !important; }
-      #cursor-outline { transition: transform 0.15s cubic-bezier(0.17, 0.67, 0.83, 0.67), width 0.3s ease, height 0.3s ease !important; }
+      #cursor-dot {
+        pointer-events: none;
+        position: fixed;
+        width: 8px;
+        height: 8px;
+        background: #f97316;
+        border-radius: 50%;
+        z-index: 99999;
+        left: 0;
+        top: 0;
+        transform: translate(-50%, -50%);
+        will-change: transform;
+      }
+      #cursor-outline {
+        pointer-events: none;
+        position: fixed;
+        width: 36px;
+        height: 36px;
+        border: 1.5px solid rgba(249, 115, 22, 0.6);
+        border-radius: 50%;
+        z-index: 99998;
+        left: 0;
+        top: 0;
+        transform: translate(-50%, -50%);
+        will-change: transform;
+        transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+      }
+      .cursor-hover #cursor-outline {
+        width: 60px;
+        height: 60px;
+        background: rgba(249, 115, 22, 0.15);
+        border-color: #f97316;
+      }
 
       .glass-card {
         background: rgba(255, 255, 255, 0.03);
@@ -98,37 +129,7 @@
         border-radius: 10px;
       }
 
-      #cursor-dot {
-        pointer-events: none;
-        position: fixed;
-        width: 6px;
-        height: 6px;
-        background: #f97316;
-        border-radius: 50%;
-        z-index: 9999;
-        left: 0;
-        top: 0;
-        transform: translate(-50%, -50%);
-      }
-      #cursor-outline {
-        pointer-events: none;
-        position: fixed;
-        width: 32px;
-        height: 32px;
-        border: 1px solid rgba(249, 115, 22, 0.5);
-        border-radius: 50%;
-        z-index: 9998;
-        left: 0;
-        top: 0;
-        transform: translate(-50%, -50%);
-      }
-      .cursor-hover #cursor-outline {
-        width: 64px;
-        height: 64px;
-        background: rgba(249, 115, 22, 0.1);
-        border-color: #f97316;
-        border-width: 2px;
-      }
+
 
       .grain-overlay {
         position: fixed;

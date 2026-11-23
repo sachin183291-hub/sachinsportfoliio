@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Education from './components/Education';
+import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import ConsultancyProjects from './components/ConsultancyProjects';
+import Honors from './components/Honors';
 import Certificates from './components/Certificates';
-import Experience from './components/Experience';
-import Education from './components/Education';
 import Contact from './components/Contact';
 import ChatBot from './components/ChatBot';
 import Background from './components/Background';
@@ -25,27 +27,42 @@ const App: React.FC = () => {
     const outline = document.getElementById('cursor-outline');
     if (!dot || !outline) return;
 
-    const moveCursor = (e: MouseEvent) => {
-      const { clientX: x, clientY: y } = e;
-      dot.style.transform = `translate(${x}px, ${y}px)`;
-      outline.style.left = `${x}px`;
-      outline.style.top = `${y}px`;
-      outline.style.transform = `translate(-50%, -50%)`;
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let outlineX = mouseX;
+    let outlineY = mouseY;
+    let animationFrameId: number;
+
+    const onMouseMove = (e: MouseEvent) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
     };
+
+    // Smooth 60fps interpolation for the trailing circle
+    const animateCursor = () => {
+      outlineX += (mouseX - outlineX) * 0.22;
+      outlineY += (mouseY - outlineY) * 0.22;
+      outline.style.transform = `translate3d(${outlineX}px, ${outlineY}px, 0) translate(-50%, -50%)`;
+      animationFrameId = requestAnimationFrame(animateCursor);
+    };
+
+    animationFrameId = requestAnimationFrame(animateCursor);
 
     const toggleHover = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      if (target?.tagName === 'A' || target?.tagName === 'BUTTON' || target?.closest('a') || target?.closest('button')) {
+      if (target?.tagName === 'A' || target?.tagName === 'BUTTON' || target?.closest('a') || target?.closest('button') || target?.getAttribute('role') === 'button') {
         document.body.classList.add('cursor-hover');
       } else {
         document.body.classList.remove('cursor-hover');
       }
     };
 
-    window.addEventListener('mousemove', moveCursor);
-    window.addEventListener('mouseover', toggleHover);
+    window.addEventListener('mousemove', onMouseMove, { passive: true });
+    window.addEventListener('mouseover', toggleHover, { passive: true });
     return () => {
-      window.removeEventListener('mousemove', moveCursor);
+      cancelAnimationFrame(animationFrameId);
+      window.removeEventListener('mousemove', onMouseMove);
       window.removeEventListener('mouseover', toggleHover);
     };
   }, []);
@@ -68,11 +85,13 @@ const App: React.FC = () => {
 
   const footerLinks = [
     { name: 'About', id: 'about' },
-    { name: 'Trajectory', id: 'trajectory' },
     { name: 'Education', id: 'education' },
+    { name: 'Trajectory', id: 'trajectory' },
     { name: 'Skills', id: 'skills' },
     { name: 'Works', id: 'projects' },
-    { name: 'Honors', id: 'certificates' },
+    { name: 'Consultancy', id: 'consultancy' },
+    { name: 'Honors', id: 'honors' },
+    { name: 'Certificates', id: 'certificates' },
     { name: 'Contact', id: 'contact' },
   ];
 
@@ -86,13 +105,17 @@ const App: React.FC = () => {
         <div className="section-divider opacity-20" />
         <About />
         <div className="section-divider opacity-20" />
-        <Experience />
-        <div className="section-divider opacity-20" />
         <Education />
+        <div className="section-divider opacity-20" />
+        <Experience />
         <div className="section-divider opacity-20" />
         <Skills />
         <div className="section-divider opacity-20" />
         <Projects />
+        <div className="section-divider opacity-20" />
+        <ConsultancyProjects />
+        <div className="section-divider opacity-20" />
+        <Honors />
         <div className="section-divider opacity-20" />
         <Certificates />
         <div className="section-divider opacity-20" />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { EXPERIENCES, EDUCATION } from '../constants';
-import { Briefcase, GraduationCap } from 'lucide-react';
+import { EXPERIENCES } from '../constants';
+import { Briefcase } from 'lucide-react';
 
 const m = motion as any;
 

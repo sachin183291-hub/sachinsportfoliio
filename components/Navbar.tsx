@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
       
-      const sections = ['hero', 'about', 'trajectory', 'education', 'skills', 'projects', 'certificates', 'contact'];
+      const sections = ['hero', 'about', 'education', 'trajectory', 'skills', 'projects', 'consultancy', 'honors', 'certificates', 'contact'];
       const scrollPosition = window.scrollY + 120;
 
       for (const sectionId of sections) {
