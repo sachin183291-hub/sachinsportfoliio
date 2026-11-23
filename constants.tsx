@@ -59,7 +59,7 @@ export const CONSULTANCY_PROJECTS: ConsultancyProject[] = [
     client: 'KR GROUPS',
     description: 'Implemented real-time poultry detection and automated health monitoring using computer vision models.',
     technologies: ['Python', 'Deep Learning', 'Computer Vision', 'OpenCV'],
-    image: 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&q=80&w=800'
+    image: 'https://img.pixelvault.dev/playground/tmp_w277z54uebe4.jpg'
   },
   {
     id: 'cp2',
